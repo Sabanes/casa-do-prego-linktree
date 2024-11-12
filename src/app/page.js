@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import logo from "../../public/logo.png";
-import nail from "../../public/nailtwo.svg";
+import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
@@ -9,7 +11,11 @@ export default function Home() {
   return (
     <>
 
-    <div className="gap-14 py-20 rounded-md bg-[#F8F3EA] flex flex-col items-center justify-center relative w-full">
+    <motion.div
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1 }}
+    transition={{ duration: .5 }}
+    className="gap-14 py-20 rounded-md bg-[#F8F3EA] flex flex-col items-center justify-center relative w-full">
       <Image src={logo} alt="logo" width={250} height={250} className=" md:w-[400px] md:h-[240px] " />
         <p className=" text-[#798645] leading-[1.25] px-2 text-center md:text-[3rem] font-bold tracking-wider text-[2rem]">Tradition Portuguese <br /> Food Restourant <br />  </p>
         <div className="flex flex-col gap-7 items-center z-20">
@@ -38,7 +44,7 @@ export default function Home() {
         </div>
       <ShootingStars />
       <StarsBackground />
-    </div>
+    </motion.div>
     </>
   );
 }
