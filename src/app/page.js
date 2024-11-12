@@ -8,8 +8,8 @@ export default function Home() {
     <>
     <Image src={nail} alt="nail" width={1000} height={1000} className="absolute top-40 -left-40 z-1" />
       <div className="bg flex flex-col items-center gap-16 py-10 z-10">
-        <Image src={logo} alt="logo" width={250} height={250} className=" md:w-[510px] md:h-[280px] " />
-        <p className=" text-[#061592] leading-[1.25] px-2 text-center md:text-[3rem] font-bold tracking-wider text-[2.7rem]">Portuguese Food Restourant Nearby <br /> <span></span> </p>
+        <Image src={logo} alt="logo" width={250} height={250} className=" md:w-[400px] md:h-[240px] " />
+        <p className=" text-[#061592] leading-[1.25] px-2 text-center md:text-[3rem] font-bold tracking-wider text-[2.7rem]">Tradition Portuguese <br /> Food Restourant <br />  </p>
         <div className="flex flex-col gap-10 items-center z-20">
           <Button text={"Menu"} link="#"/>
           <Button text={"Find us"} link="https://maps.app.goo.gl/R3WtNUSLj9n99ndHA"/>
