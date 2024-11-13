@@ -21,7 +21,7 @@ export default function Home() {
     transition={{ duration: .5 }}
     className="gap-14  rounded-md flex flex-col items-center  justify-center relative w-full">
       <Image src={logo} alt="logo" width={250} height={250} className="pt-10 md:w-[220px] md:h-[160px] " />
-        <p className=" text-slate-300 leading-[1.25] px-2 text-center md:text-[2.5rem] font-bold tracking-wider text-[2rem]">Tradition Portuguese <br /> Food Restourant <br />  </p>
+        <p className=" text-white leading-[1.25] px-2 text-center md:text-[2.5rem] font-bold tracking-wider text-[2rem]">Tradition Portuguese <br /> Food Restourant <br />  </p>
         <div className="flex flex-col gap-7 items-center z-20">
           <Button text={"Menu"} link="#"/>
           <Button text={"Find us"} link="https://maps.app.goo.gl/R3WtNUSLj9n99ndHA"/>
