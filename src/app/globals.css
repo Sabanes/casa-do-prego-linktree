@@ -5,12 +5,14 @@
 
 
 html {
-    background: #F8F3EA;
-    color: #798645;
+    background: #000000;
+
 }
 body {
     overflow-x: hidden;
 }
+
+
 
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
