@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-    <Image src={bg} alt="bg" width={5000} height={5000} className=" absolute md:h-screen h-[110vh] md:w-screen w-[150vw] z-0 top-0 left-0 cover" />       
+    <Image src={bg} alt="bg" width={5000} height={5000} className=" absolute md:h-screen h-[110vh] md:w-screen w-[150vw] z-0 top-0 left-0 " />       
     <motion.div                         
     initial={{ opacity: 0}}
     animate={{ opacity: 1 }}
@@ -23,7 +23,7 @@ export default function Home() {
       <Image src={logo} alt="logo" width={250} height={250} className="pt-10 md:w-[220px] md:h-[160px] " />
         <p className=" text-white leading-[1.25] px-2 text-center md:text-[2.5rem] font-bold tracking-wider text-[2rem]">Tradition Portuguese <br /> Food Restourant <br />  </p>
         <div className="flex flex-col gap-7 items-center z-20">
-          <Button text={"Menu"} link="#"/>
+        <Button text={"Menu"} link="/Menu3.pdf" />
           <Button text={"Find us"} link="https://maps.app.goo.gl/R3WtNUSLj9n99ndHA"/>
           <Button text={"Leave a review"} link="https://www.tripadvisor.com/UserReviewEdit-g189164-d23959309-Casa_Do_Prego_Vila_De_Sintra-Sintra_Sintra_Municipality_Lisbon_District_Central_Portugal.html"/>
           <Button text={"Book a table"} link="https://wa.me/351967949807"/>
